@@ -1,7 +1,5 @@
 # Nginx 日志分析处理监控(web log analyst)
 
-[TOC]
-
 
 ## 1. 功能描述
 
@@ -10,7 +8,7 @@
 
 ## 2. 项目流程图
 
-[Nginx 日志分析处理监控流程图](./images/nginx_log_processing_monitoring.png)
+![Nginx 日志分析处理监控流程图](./images/nginx_log_processing_monitoring.png)
 
 
 ## 3. 模块分析过程
@@ -44,9 +42,15 @@
 | 8 | HTTP版本的分布 | group by | pie chat or stack chat |
 
 
-### 3.3 展示日志文件
+### 3.3 数据结构
+为了便于理解，下图实例了一下，对应的数据结构便于理解和学习。
 
-#### 3.3.1 influxdb
+![数据结构](./images/structure_of_the_data.png)
+
+
+### 3.4 展示日志文件
+
+#### 3.4.1 influxdb
 
 **用途**
 
@@ -74,7 +78,7 @@ sudo systemctl start influxdb
 # 在浏览器中输入`localhost:8083`即可进入`web`管理页面
 ```
 
-#### 3.3.2 grafana
+#### 3.4.2 grafana
 
 **用途**
 
@@ -107,5 +111,10 @@ sudo systemctl status grafana-server
 
 ## 4. 效果展示
 
+**influxdb存储数据**
 
+![influxdb存储数据](./images/influxdb.jpeg)
 
+**grafana监控展示**
+
+![grafana监控展示](./images/grafana.jpeg)
