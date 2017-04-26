@@ -6,7 +6,7 @@ import threading
 import requests
 import multiprocessing
 
-o = re.compile(r'(?P<ip>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) .* .* \[(?P<time>.*)\] "(?P<method>\w+) (?P<url>[^\s]*) (?P<version>[\w|/\.\d]*)" (?P<status>\d{3}) (?P<length>\d+) "(?P<referer>[^\s]*)" "(?P<ua>.*)"')
+compile = re.compile(r'(?P<ip>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) .* .* \[(?P<time>.*)\] "(?P<method>\w+) (?P<url>[^\s]*) (?P<version>[\w|/\.\d]*)" (?P<status>\d{3}) (?P<length>\d+) "(?P<referer>[^\s]*)" "(?P<ua>.*)"')
 event = multiprocessing.Event()
 
 
@@ -32,9 +32,9 @@ def read_worker(path, q):
 def parse(in_queue, out_queue):
     while not event.is_set():
         line = in_queue.get()
-        m = o.search(line.rstrip('\n'))
-        if m:
-            data = m.groupdict()
+        search = compile.search(line.rstrip('\n'))
+        if search:
+            data = search.groupdict()
             out_queue.put(data)
 
 

@@ -6,7 +6,7 @@ import datetime
 import threading
 import requests
 
-o = re.compile(r'(?P<ip>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) .* .* \[(?P<time>.*)\] "(?P<method>\w+) (?P<url>[^\s]*) (?P<version>[\w|/\.\d]*)" (?P<status>\d{3}) (?P<length>\d+) "(?P<referer>[^\s]*)" "(?P<ua>.*)"')
+compile = re.compile(r'(?P<ip>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}) .* .* \[(?P<time>.*)\] "(?P<method>\w+) (?P<url>[^\s]*) (?P<version>[\w|/\.\d]*)" (?P<status>\d{3}) (?P<length>\d+) "(?P<referer>[^\s]*)" "(?P<ua>.*)"')
 event = threading.Event()
 
 
@@ -31,9 +31,9 @@ def read_worker(q, path):
 def parse(q):
     while not event.is_set():
         line = q.get()
-        m = o.search(line.rstrip('\n'))
-        if m:
-            data = m.groupdict()
+        search = compile.search(line.rstrip('\n'))
+        if search:
+            data = search.groupdict()
             yield data
 
 
