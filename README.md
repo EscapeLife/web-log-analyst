@@ -1,7 +1,5 @@
 # Nginx 日志分析处理监控(web log analyst)
 
-[TOC]
-
 
 ## 1. 功能描述
 
@@ -10,7 +8,7 @@
 
 ## 2. 项目流程图
 
-[Nginx 日志分析处理监控流程图](./images/nginx_log_processing_monitoring.png)
+![Nginx 日志分析处理监控流程图](./images/nginx_log_processing_monitoring.png)
 
 
 ## 3. 模块分析过程
@@ -107,5 +105,6 @@ sudo systemctl status grafana-server
 
 ## 4. 效果展示
 
+![influxdb存储数据](./images/influxdb.jpeg)
 
-
+![grafana监控展示](./images/grafana.jpeg)
