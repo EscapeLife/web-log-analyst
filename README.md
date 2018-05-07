@@ -131,3 +131,5 @@ sudo systemctl status grafana-server
 **grafana监控展示**
 
 ![grafana监控展示](./images/grafana.jpeg)
+
+**注释：**没有提供所需的Nginx日志文件，使用时需要结合自己的真实适用场景进行合理规划。
