@@ -90,7 +90,7 @@ EOF
 sudo yum install influxdb
 sudo systemctl start influxdb
 
-# 在浏览器中输入`localhost:8083`即可进入`web`管理页面
+# 在浏览器中输入 localhost:8083 即可进入web管理页面
 ```
 
 #### 3.4.2 grafana
@@ -120,7 +120,7 @@ sudo yum install grafana
 sudo systemctl start grafana-server
 sudo systemctl status grafana-server
 
-# 在浏览器中输入`localhost:3000`即可进入`web`管理页面
+# 在浏览器中输入 localhost:3000 即可进入web管理页面
 ```
 
 
