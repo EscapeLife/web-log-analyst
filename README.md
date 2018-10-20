@@ -2,16 +2,16 @@
 
 ![images](./images/web_log_anlyzst.jpg)
 
-## 目录
+## 项目目录
 
-- [功能描述](##功能描述)
-- [项目流程图](##项目流程图)
-- [模块分析过程](##模块分析过程)
-   - [解析日志文件](###解析日志文件)
-   - [分析日志文件](###分析日志文件)
-   - [数据结构](###数据结构)
-   - [展示日志文件](###展示日志文件)
-- [效果展示](##效果展示)
+- [功能描述](https://github.com/EscapeLife/web-log-analyst#1-%E5%8A%9F%E8%83%BD%E6%8F%8F%E8%BF%B0)
+- [项目流程图](https://github.com/EscapeLife/web-log-analyst#2-%E9%A1%B9%E7%9B%AE%E6%B5%81%E7%A8%8B%E5%9B%BE)
+- [模块分析过程](https://github.com/EscapeLife/web-log-analyst#3%E6%A8%A1%E5%9D%97%E5%88%86%E6%9E%90%E8%BF%87%E7%A8%8B)
+   - [解析日志文件](https://github.com/EscapeLife/web-log-analyst#31-%E8%A7%A3%E6%9E%90%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6)
+   - [分析日志文件](https://github.com/EscapeLife/web-log-analyst#32-%E5%88%86%E6%9E%90%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6)
+   - [数据结构](https://github.com/EscapeLife/web-log-analyst#33-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
+   - [展示日志文件](https://github.com/EscapeLife/web-log-analyst#34-%E5%B1%95%E7%A4%BA%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6)
+- [效果展示](https://github.com/EscapeLife/web-log-analyst#4-%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA)
 
 
 ## 1. 功能描述
@@ -21,6 +21,8 @@
 
 ## 2. 项目流程图
 
+> 通过流程图直观的解释项目的分析过程。
+
 ![Nginx 日志分析处理监控流程图](./images/nginx_log_processing_monitoring.png)
 
 
@@ -29,6 +31,7 @@
 > 注释：没有提供所需的Nginx日志文件，使用时需要结合自己的真实适用场景进行合理规划。
 
 ### 3.1 解析日志文件
+
 对于`Web`服务器的日志输出，是由我们指定的，既可以更多的记录站点的信息也可以大致的做一下记录。当然，最重要信息肯定也是必不可少的。如下，列出了比较重要的日志记录信息。
 
 - `IP`地址
@@ -41,8 +44,8 @@
 - `referer`
 - `UserAgent`
 
-
 ### 3.2 分析日志文件
+
 通过对于`Nginx`日志的分析，我们可以得到很多东西，不只是我下面表格列出的这几条。分析得到的结果，可以有助于我们来优化网站性能、统计网站访问量以及实时展示有很大的帮助。
 
 | 编号 | 获取到的内容 | 如果统计 | 如何展示 |
@@ -56,12 +59,10 @@
 | 7 | UserAgent的分布 | group by | pie chat or stack chat |
 | 8 | HTTP版本的分布 | group by | pie chat or stack chat |
 
-
 ### 3.3 数据结构
 为了便于理解，下图实例了一下，对应的数据结构便于理解和学习。
 
 ![数据结构](./images/structure_of_the_data.png)
-
 
 ### 3.4 展示日志文件
 
