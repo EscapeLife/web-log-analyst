@@ -1,4 +1,4 @@
-# Nginx 日志分析处理监控(web log analyst)
+# Nginx 日志分析处理监控
 
 ![images](./images/web_log_anlyzst.jpg)
 
