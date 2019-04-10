@@ -1,0 +1,42 @@
+# top-most EditorConfig file
+root = true
+
+# setting for all files
+[*]
+# character set
+charset = utf-8
+# indented style
+end_of_line = lf
+# whether to insert a blank line at the end of a file
+insert_final_newline = true
+# whether to delete the space at the end of a line
+trim_trailing_whitespace = false
+
+# python
+[*.py]
+indent_style = space
+indent_size = 4
+
+# shell
+[*.sh]
+indent_style = space
+indent_size = 4
+
+# javascript
+[*.js]
+indent_style = space
+indent_size = 2
+
+# makefile
+[*.md]
+indent_style = tab
+
+# json or .travis.yml
+[*.json]
+indent_style = space
+indent_size = 2
+
+# yml
+[*.yml}]
+indent_style = space
+indent_size = 2
