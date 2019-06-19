@@ -150,9 +150,7 @@ sudo systemctl status grafana-server
 ![grafana监控展示](./images/grafana.jpeg)
 
 
-## Contact
-
-> **Below is my personal contact information.**
+## 5. 联系方式
 
 <p align="center">
     <img src="https://escapelife-1257414824.cos.ap-shanghai.myqcloud.com/escape-wechat-qrcode-1.gif" width="280" height="280" alt="WX" align="left" />
