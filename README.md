@@ -12,7 +12,6 @@
   <a href="https://github.com/EscapeLife/awesome-builder.git"><img src="https://img.shields.io/badge/Project-web_log_analyst-green.svg?style=for-the-badge&logo=ubuntu" alt="love_girlfriend"></a>
   <a href="https://github.com/EscapeLife/awesome-builder.git"><img src="https://img.shields.io/badge/Author-Escape-orange.svg?style=for-the-badge&logo=vim" alt="love_girlfriend"></a>
   <a href="https://github.com/EscapeLife/awesome-builder.git"><img src="https://img.shields.io/badge/Languages-Python3.7-yellow.svg?style=for-the-badge&logo=python" alt="love_girlfriend"></a>
-  <a href="https://github.com/EscapeLife/awesome-builder.git"><img src="https://img.shields.io/badge/Contributions-Weclone-blue.svg?style=for-the-badge&logo=coffeescript" alt="love_girlfriend"></a>
 </p>
 
 
