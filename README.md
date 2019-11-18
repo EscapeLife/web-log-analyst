@@ -17,14 +17,15 @@
 
 ## 项目目录
 
-- [功能描述](https://github.com/EscapeLife/web-log-analyst#1-%E5%8A%9F%E8%83%BD%E6%8F%8F%E8%BF%B0)
-- [项目流程图](https://github.com/EscapeLife/web-log-analyst#2-%E9%A1%B9%E7%9B%AE%E6%B5%81%E7%A8%8B%E5%9B%BE)
-- [模块分析过程](https://github.com/EscapeLife/web-log-analyst#3%E6%A8%A1%E5%9D%97%E5%88%86%E6%9E%90%E8%BF%87%E7%A8%8B)
-   - [解析日志文件](https://github.com/EscapeLife/web-log-analyst#31-%E8%A7%A3%E6%9E%90%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6)
-   - [分析日志文件](https://github.com/EscapeLife/web-log-analyst#32-%E5%88%86%E6%9E%90%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6)
-   - [数据结构](https://github.com/EscapeLife/web-log-analyst#33-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
-   - [展示日志文件](https://github.com/EscapeLife/web-log-analyst#34-%E5%B1%95%E7%A4%BA%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6)
-- [效果展示](https://github.com/EscapeLife/web-log-analyst#4-%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA)
+- [1. 功能描述](https://github.com/EscapeLife/web-log-analyst#1-%E5%8A%9F%E8%83%BD%E6%8F%8F%E8%BF%B0)
+- [2. 项目流程图](https://github.com/EscapeLife/web-log-analyst#2-%E9%A1%B9%E7%9B%AE%E6%B5%81%E7%A8%8B%E5%9B%BE)
+- [3. 模块分析过程](https://github.com/EscapeLife/web-log-analyst#3%E6%A8%A1%E5%9D%97%E5%88%86%E6%9E%90%E8%BF%87%E7%A8%8B)
+   - [3.1 解析日志文件](https://github.com/EscapeLife/web-log-analyst#31-%E8%A7%A3%E6%9E%90%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6)
+   - [3.2 分析日志文件](https://github.com/EscapeLife/web-log-analyst#32-%E5%88%86%E6%9E%90%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6)
+   - [3.3 数据结构](https://github.com/EscapeLife/web-log-analyst#33-%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84)
+   - [3.4 展示日志文件](https://github.com/EscapeLife/web-log-analyst#34-%E5%B1%95%E7%A4%BA%E6%97%A5%E5%BF%97%E6%96%87%E4%BB%B6)
+- [4. 效果展示](https://github.com/EscapeLife/web-log-analyst#4-%E6%95%88%E6%9E%9C%E5%B1%95%E7%A4%BA)
+- [5. 快速构建]()
 
 
 ## 1. 功能描述
@@ -149,7 +150,14 @@ sudo systemctl status grafana-server
 ![grafana监控展示](./images/grafana.jpeg)
 
 
-## 5. 联系方式
+## 5. 快速构建
+
+> **使用Docker进行快速构建**
+
+Todo
+
+
+## 6. 联系方式
 
 <p align="center">
     <img src="https://escapelife-1257414824.cos.ap-shanghai.myqcloud.com/escape-wechat-qrcode-1.gif" width="280" height="280" alt="WX" align="left" />
