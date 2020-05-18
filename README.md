@@ -164,12 +164,12 @@ sudo systemctl status grafana-server
 </p>
 
 - **💭 [Name] 💭**
-  - 🐠 **[`EscapeLife`](https://escapelife.github.io)** 😏
+  - 🐠 **[`EscapeLife`](https://www.escapelife.site)** 😏
 - **💭 [Induction] 💭**
   - 🏦 **[`Focusing P.A.I`](https://paodingai.com/)** 😂
 - **💭 [Email] 💭**
-  - 📫 **[`wenpanhappy@gmail.com`](https://escapelife.github.io)** 🤔
+  - 📫 **[`wenpanhappy@gmail.com`](https://www.escapelife.site)** 🤔
 - **💭 [Myblog] 💭**
-  - 🍺 **[`https://escapelife.github.io`](https://escapelife.github.io)** 😚
+  - 🍺 **[`https://www.escapelife.site`](https://www.escapelife.site)** 😚
 - **💭 [License] 💭**
   - 🚧 [**`Apache License, Version 2.0`**](http://www.apache.org/licenses/LICENSE-2.0.html)😝
