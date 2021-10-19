@@ -163,13 +163,19 @@ sudo systemctl status grafana-server
     <img src="https://escapelife-1257414824.cos.ap-shanghai.myqcloud.com/escape-wechat-qrcode-1.gif" width="280" height="280" alt="WX" align="left" />
 </p>
 
-- **💭 [Name] 💭**
+- **💭 [Name][^1] 💭**
   - 🐠 **[`EscapeLife`](https://www.escapelife.site)** 😏
-- **💭 [Induction] 💭**
-  - 🏦 **[`Focusing P.A.I`](https://paodingai.com/)** 😂
-- **💭 [Email] 💭**
+- **💭 [Induction][^2] 💭**
+  - 🏦 **[`Focusing P.A.I`](https://www.paodingai.com)** 😂
+- **💭 [Email][^3] 💭**
   - 📫 **[`wenpanhappy@gmail.com`](https://www.escapelife.site)** 🤔
-- **💭 [Myblog] 💭**
+- **💭 [Myblog][^4] 💭**
   - 🍺 **[`https://www.escapelife.site`](https://www.escapelife.site)** 😚
-- **💭 [License] 💭**
+- **💭 [License][^5] 💭**
   - 🚧 [**`Apache License, Version 2.0`**](http://www.apache.org/licenses/LICENSE-2.0.html)😝
+
+[^1]: This is my nickname.
+[^2]: This is my company address.
+[^3]: This is my public mailbox.
+[^4]: This is my blog.
+[^5]: The open source protocol used by the repository.
