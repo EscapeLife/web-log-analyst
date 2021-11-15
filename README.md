@@ -30,7 +30,7 @@
 
 > **小工具功能用途的简单描述**
 
-一个简单的日志分发、存储、监控、展示的小工具，当然你也可以将任何你关注的信息进行展示。`log_distribution.py`用来分发日志数据，变相的实现了，多日志监控的效果。`analyzer_threading.py` 和 `analyzer_multiprocessing.py` 是利用进程以及线程的特性，对日志进行了收集、聚合、发送的效果(在 `python` 中，`threading` 多线程都是运行在一个进程当中的，所以对于多核 `CPU` 并没有发挥其性能；相对而言，`multiprocessing` 多进程可以充分利用操作系统的性能)。将数据存储在 `influxdb` 流式数据库中，并利用 `grafana` 进行`展示，当然这里你也可以使用其他的数据库展示工具都是可以的。
+一个简单的日志分发、存储、监控、展示的小工具，当然你也可以将任何你关注的信息，集中到这里进行展示。其中 `log_distribution.py` 用来分发日志数据，变相的实现了多日志监控的效果；`analyzer_threading.py` 和 `analyzer_multiprocessing.py` 是利用进程以及线程的特性，对日志进行了收集、聚合、发送的效果(在 `python` 中，`threading` 多线程都是运行在一个进程当中的，所以对于多核 `CPU` 并没有发挥其性能；相对而言，`multiprocessing` 多进程可以充分利用操作系统的性能)。将数据存储在 `influxdb` 流式数据库中，并利用 `grafana` 进行`展示，当然这里你也可以使用其他的数据库展示工具都是可以的。
 
 ## 2. 项目流程图
 
@@ -151,7 +151,14 @@ sudo systemctl status grafana-server
 
 > **使用 Docker 进行快速构建**
 
-- Todo
+```bash
+# 生成数据
+$ python3 script/log_distribution.py data/grpc.access.log egg/1.log egg/2.log egg/3.log
+
+# 解析数据并推送到influxdb里面
+$ python3 script/analyzer_multiprocessing.py egg/1.log egg/2.log egg/3.log
+$ python3 script/analyzer_threading.py egg/1.log egg/2.log egg/3.log
+```
 
 ## 6. 联系方式
 
