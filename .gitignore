@@ -135,6 +135,11 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-# Mac env
-.DS_Store/
+# Vscode dot dir
+.vscode/
+
+# Mac dot file
+.DS_Store
+
+# Pyenv python file
 .python-version
